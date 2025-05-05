@@ -28,7 +28,6 @@ function cellClick(cell) {
   const index = getIndex(x, y);
   if (cell.classList.contains('active')) cellPos.push(index), cellPos.sort((a, b) => a - b);
   else cellPos = cellPos.filter(item => item !== index);
-  console.log(cellPos);
   });
 }
 
@@ -75,4 +74,3 @@ document.getElementById('reset').addEventListener('click', () => {
 });
 
 createGrid();
-console.log('test');
