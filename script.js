@@ -74,4 +74,3 @@ document.getElementById('reset').addEventListener('click', () => {
   cells.forEach(cell => cell.classList.remove('active'));
 });
 
-createGrid();
