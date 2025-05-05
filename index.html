@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find the Patterns</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="orientation-warning">
+    <p>Please rotate your device to <strong>landscape</strong> mode to play.</p>
+  </div>
+
+  <div class="container">
+    <h1 text style=text-align:center>Find the Patterns</h1>
+    <div class="game-board" id="gameBoard"></div>
+    <div class="button-group">
+      <button id="submit">Send</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div id="popup" class="popup"></div>    
+  </div>
+
+  <audio id="sound-correct" src="sounds/correct.mp3" preload="auto"></audio>
+  <audio id="sound-incorrect" src="sound/wrong.mp3" preloaf="auto"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>

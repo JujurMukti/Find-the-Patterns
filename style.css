@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+  
+  #orientation-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    z-index: 10;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 70vmin;
+    height: 70vmin;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid #333;
+    position: relative;
+  }
+  
+  .cell {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    user-select: none;
+  }
+  
+  .cell.active {
+    background-color: dodgerblue;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+  }
+  
+  #popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(47, 255, 0, 0.6); /* Overlay gelap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+  
+  #popup.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  #popup .popup-box {
+    color: white;
+    font-weight: bold;
+    padding: 2rem 3rem;
+    font-size: 7vmin;
+    transition: all 0.3s ease;
+    max-width: 80%;
+    text-align: center;
+  }
+  
+  @media (orientation: portrait) {
+    #orientation-warning {
+      display: flex;
+    }
+  
+    .container {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .game-board {
+      width: 90vmin;
+      height: 90vmin;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    #popup .popup-box {
+      font-size: 5vmin;
+      padding: 1.5rem 2rem;
+    }
+    
+  }
+  
+  
