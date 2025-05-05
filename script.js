@@ -1,6 +1,6 @@
 const correctPattern = [0, 1, 2, 12, 22];
 const soundCorrect = document.getElementById("sound-correct");
-const soundIncorrect = document.getElementById("sound-wrong");
+const soundIncorrect = document.getElementById("sound-incorrect");
 
 let gridCol = 10; 
 let gridRow = 10;
