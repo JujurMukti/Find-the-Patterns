@@ -75,3 +75,4 @@ document.getElementById('reset').addEventListener('click', () => {
 });
 
 createGrid();
+console.log('test');
