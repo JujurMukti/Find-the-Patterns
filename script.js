@@ -64,7 +64,13 @@ function showPopup(message, isSuccess) {
 
 document.getElementById('submit').addEventListener('click', () => {
   const isCorrect = JSON.stringify(cellPos) === JSON.stringify(correctPattern);
-  showPopup(isCorrect ? "CORRECT PATTERN!" : "TRY AGAIN!", isCorrect);
+  showPopup(isCorrect ? "CORRECT!" : "TRY AGAIN!", isCorrect);
+  if (isCorrect) {
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+  }
   isCorrect ? playSound(soundCorrect) : playSound(soundIncorrect);
 });
 

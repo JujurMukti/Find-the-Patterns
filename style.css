@@ -5,7 +5,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   overflow-x: hidden;
   color: #333;
 }
@@ -25,6 +24,21 @@ body {
   padding: 2em;
   z-index: 10;
   box-sizing: border-box;
+}
+
+.info-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: white;
+}
+
+.watermark {
+  aspect-ratio: 1 / 1;
+  width: 5%;
+  margin-top: 10px;
+  margin-right: 5px;
 }
 
 .button-group {
@@ -60,8 +74,8 @@ button:active {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  width: 100vmin;
-  height: 100vmin;
+  width: 110vmin;
+  height: 110vmin;
   margin: 20px auto;
   background-color: #ffffff;
   border-radius: 16px;
