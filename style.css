@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222;
+  background-color: #017878;
   color: white;
 }
 
@@ -52,7 +52,7 @@ body {
 button {
   padding: 12px 24px;
   font-size: 1rem;
-  background-color: #4CAF50;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 12px;
@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-  background-color: #388E3C;
+  background-color: #6b9a40;
   transform: translateY(-2px);
 }
 
@@ -98,7 +98,7 @@ button:active {
 }
 
 .cell.active {
-  background-color: #1E88E5;
+  background-color: #a3d376;
   color: white;
   font-weight: bold;
 }

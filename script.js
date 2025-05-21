@@ -1,4 +1,4 @@
-const correctPattern = [0, 1, 2, 12, 22];
+const correctPattern = [1, 10, 11, 12, 13, 14, 15, 17, 19, 21, 25, 27, 29, 31, 35, 37, 39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 58, 59, 60, 61, 68, 69, 70, 71, 84, 85, 86];
 const soundCorrect = document.getElementById("sound-correct");
 const soundIncorrect = document.getElementById("sound-incorrect");
 
